@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="//db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=Circular+Spotify+Tx+T+Black" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!--Favicon-spotify-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--Favicon ends-->
+</head>
+<body style="background-color: #121212;">
+    <div class="container">
+    <nav>
+        <div class="main">
+            <div style="margin-bottom: 18px;">
+          <a href="index.html" class="logo">
+            <svg viewBox="0 0 1134 340" class="logoinside"><title>Spotify</title><path fill="currentColor" d="M8 171c0 92 76 168 168 168s168-76 168-168S268 4 176 4 8 79 8 171zm230 78c-39-24-89-30-147-17-14 2-16-18-4-20 64-15 118-8 162 19 11 7 0 24-11 18zm17-45c-45-28-114-36-167-20-17 5-23-21-7-25 61-18 136-9 188 23 14 9 0 31-14 22zM80 133c-17 6-28-23-9-30 59-18 159-15 221 22 17 9 1 37-17 27-54-32-144-35-195-19zm379 91c-17 0-33-6-47-20-1 0-1 1-1 1l-16 19c-1 1-1 2 0 3 18 16 40 24 64 24 34 0 55-19 55-47 0-24-15-37-50-46-29-7-34-12-34-22s10-16 23-16 25 5 39 15c0 0 1 1 2 1s1-1 1-1l14-20c1-1 1-1 0-2-16-13-35-20-56-20-31 0-53 19-53 46 0 29 20 38 52 46 28 6 32 12 32 22 0 11-10 17-25 17zm95-77v-13c0-1-1-2-2-2h-26c-1 0-2 1-2 2v147c0 1 1 2 2 2h26c1 0 2-1 2-2v-46c10 11 21 16 36 16 27 0 54-21 54-61s-27-60-54-60c-15 0-26 5-36 17zm30 78c-18 0-31-15-31-35s13-34 31-34 30 14 30 34-12 35-30 35zm68-34c0 34 27 60 62 60s62-27 62-61-26-60-61-60-63 27-63 61zm30-1c0-20 13-34 32-34s33 15 33 35-13 34-32 34-33-15-33-35zm140-58v-29c0-1 0-2-1-2h-26c-1 0-2 1-2 2v29h-13c-1 0-2 1-2 2v22c0 1 1 2 2 2h13v58c0 23 11 35 34 35 9 0 18-2 25-6 1 0 1-1 1-2v-21c0-1 0-2-1-2h-2c-5 3-11 4-16 4-8 0-12-4-12-12v-54h30c1 0 2-1 2-2v-22c0-1-1-2-2-2h-30zm129-3c0-11 4-15 13-15 5 0 10 0 15 2h1s1-1 1-2V93c0-1 0-2-1-2-5-2-12-3-22-3-24 0-36 14-36 39v5h-13c-1 0-2 1-2 2v22c0 1 1 2 2 2h13v89c0 1 1 2 2 2h26c1 0 1-1 1-2v-89h25l37 89c-4 9-8 11-14 11-5 0-10-1-15-4h-1l-1 1-9 19c0 1 0 3 1 3 9 5 17 7 27 7 19 0 30-9 39-33l45-116v-2c0-1-1-1-2-1h-27c-1 0-1 1-1 2l-28 78-30-78c0-1-1-2-2-2h-44v-3zm-83 3c-1 0-2 1-2 2v113c0 1 1 2 2 2h26c1 0 1-1 1-2V134c0-1 0-2-1-2h-26zm-6-33c0 10 9 19 19 19s18-9 18-19-8-18-18-18-19 8-19 18zm245 69c10 0 19-8 19-18s-9-18-19-18-18 8-18 18 8 18 18 18zm0-34c9 0 17 7 17 16s-8 16-17 16-16-7-16-16 7-16 16-16zm4 18c3-1 5-3 5-6 0-4-4-6-8-6h-8v19h4v-6h4l4 6h5zm-3-9c2 0 4 1 4 3s-2 3-4 3h-4v-6h4z"></path></svg>
+          </a></div>
+          <ul class="listz">
+              <li class="three">
+                  <a href="index.html" class="listclass"> 
+                    <svg role="img" height="24" width="24" class="home-icon" viewBox="0 0 24 24"><path d="M13.5 1.515a3 3 0 00-3 0L3 5.845a2 2 0 00-1 1.732V21a1 1 0 001 1h6a1 1 0 001-1v-6h4v6a1 1 0 001 1h6a1 1 0 001-1V7.577a2 2 0 00-1-1.732l-7.5-4.33z"></path></svg> 
+                    <span class="Home-text">Home</span></a>
+              </li>
+              <li class="three">
+                <a href="search.html" class="listclass">
+                    <svg role="img" height="24" width="24" class="home-icon" viewBox="0 0 24 24"><path d="M15.356 10.558c0 2.623-2.16 4.75-4.823 4.75-2.664 0-4.824-2.127-4.824-4.75s2.16-4.75 4.824-4.75c2.664 0 4.823 2.127 4.823 4.75z"></path><path d="M1.126 10.558c0-5.14 4.226-9.28 9.407-9.28 5.18 0 9.407 4.14 9.407 9.28a9.157 9.157 0 01-2.077 5.816l4.344 4.344a1 1 0 01-1.414 1.414l-4.353-4.353a9.454 9.454 0 01-5.907 2.058c-5.18 0-9.407-4.14-9.407-9.28zm9.407-7.28c-4.105 0-7.407 3.274-7.407 7.28s3.302 7.279 7.407 7.279 7.407-3.273 7.407-7.28c0-4.005-3.302-7.278-7.407-7.278z"></path></svg>
+                    <span class="Home-text">Search</span>
+                </a>
+
+              </li>
+              <li class="three">
+                <a href="Yourlibrary.html" class="listclass">
+                    <svg role="img" height="24" width="24" class="home-icon" viewBox="0 0 24 24"><path d="M3 22a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1zM15.5 2.134A1 1 0 0014 3v18a1 1 0 001 1h6a1 1 0 001-1V6.464a1 1 0 00-.5-.866l-6-3.464zM9 2a1 1 0 00-1 1v18a1 1 0 102 0V3a1 1 0 00-1-1z"></path></svg>
+                    <span class="Home-text">Your Library</span>
+                </a>
+
+
+              </li>
+          </ul>
+          <div style="margin-top: 24px;">
+            <ul class="listz">
+              <li class="three">
+                  <a href="Createplaylist.html" class="listclass">
+                    <div class="plus">
+                    <svg role="img" height="12" width="12" aria-hidden="true" viewBox="0 0 16 16" class="home-icon"><path d="M15.25 8a.75.75 0 01-.75.75H8.75v5.75a.75.75 0 01-1.5 0V8.75H1.5a.75.75 0 010-1.5h5.75V1.5a.75.75 0 011.5 0v5.75h5.75a.75.75 0 01.75.75z"></path></svg> 
+                  </div><span class="Home-text">Create Playlist</span></a>
+              </li>
+              <li class="three">
+                <a href="Likedsongs.html" class="listclass">
+                  <div class="gradient">
+                  <svg role="img" height="12" width="12" aria-hidden="true" viewBox="0 0 16 16" class="home-icon"><path d="M15.724 4.22A4.313 4.313 0 0012.192.814a4.269 4.269 0 00-3.622 1.13.837.837 0 01-1.14 0 4.272 4.272 0 00-6.21 5.855l5.916 7.05a1.128 1.128 0 001.727 0l5.916-7.05a4.228 4.228 0 00.945-3.577z"></path></svg></div>
+                    <span class="Home-text">Liked Songs</span>
+                </a></li>
+                </ul>
+          </div>
+          <hr style="background-color: #282828;border: none;height: 1px; margin: 15px 20px;">
+          <div class="playlistblock">
+            <ul class="listz">
+              <li class="three">
+                <a href="Createplaylist.html" class="listclass">
+                  <span class="plst-text">My Playlist #1</span>
+                </a>
+              </li>
+              <li class="three">
+                <a href="Playlist2.html" class="listclass">
+                  <span class="plst-text">My Playlist #2</span>
+                </a>
+              </li>
+              <li class="three">
+                <a href="Playlist3.html" class="listclass">
+                  <span class="plst-text">My Playlist #3</span>
+                </a>
+              </li>
+              <li class="three">
+                <a href="Playlist4.html" class="listclass">
+                  <span class="plst-text">My Playlist #4</span>
+                </a>
+              </li>
+              <li class="three">
+                <a href="Playlist5.html" class="listclass">
+                  <span class="plst-text">My Playlist #5</span>
+                </a>
+              </li>
+              <li class="three">
+                <a href="Playlist6.html" class="listclass">
+                  <span class="plst-text">My Playlist #6</span>
+                </a>
+              </li>
+            </ul>
+            
+          </div>
+            <ul class="listz" style="margin-top: 40px;">
+              <li class="three">
+                  <a href="https://www.spotify.com/us/download/windows/" class="listclass"> 
+                    <div style="color:white;">
+                    <svg role="img" height="24" width="24" viewBox="0 0 24 24" class="home-icon"><path d="M12 3a9 9 0 100 18 9 9 0 000-18zM1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12z"></path><path d="M12 6.05a1 1 0 011 1v7.486l1.793-1.793a1 1 0 111.414 1.414L12 18.364l-4.207-4.207a1 1 0 111.414-1.414L11 14.536V7.05a1 1 0 011-1z"></path></svg></div> 
+                    <span class="Home-text">Install App</span>
+                  </a>
+                </li>
+              </ul> 
+        </div>
+        <section class="create-playlist" style="margin-top: -64px;width: 84%; margin-left: 16%;">
+            <div class=" contentspacing playlist-content1 playlist-content2" >
+                <div class="firstdiv" style="background-color: rgb(83, 83, 83); z-index:-5; height:400px;">
+                    <div style= "background: -webkit-gradient(linear,left top,left bottom,from(transparent),to(rgba(0,0,0,.5))); height: 100%;
+                    width: 100%;"> 
+                    <div style="height: 130px;"></div>               
+                     <div style="background-color: #282828; color: #7f7f7f;height: 232px; width: 232px; align-self: flex-end; justify-content: center; margin-left: 25px; z-index: 999;box-shadow: 0px 15px 46px -5px rgb(0 0 0); text-align: center; float: left; margin-right: 30px;">
+                        <svg width="80" height="81" viewBox="0 0 80 81" style=" margin-top:75.5px;" xmlns="http://www.w3.org/2000/svg"><path d="M25.6 11.565v45.38c-2.643-3.27-6.68-5.37-11.2-5.37-7.94 0-14.4 6.46-14.4 14.4s6.46 14.4 14.4 14.4 14.4-6.46 14.4-14.4v-51.82l48-10.205V47.2c-2.642-3.27-6.678-5.37-11.2-5.37-7.94 0-14.4 6.46-14.4 14.4s6.46 14.4 14.4 14.4S80 64.17 80 56.23V0L25.6 11.565zm-11.2 65.61c-6.176 0-11.2-5.025-11.2-11.2 0-6.177 5.024-11.2 11.2-11.2 6.176 0 11.2 5.023 11.2 11.2 0 6.174-5.026 11.2-11.2 11.2zm51.2-9.745c-6.176 0-11.2-5.024-11.2-11.2 0-6.174 5.024-11.2 11.2-11.2 6.176 0 11.2 5.026 11.2 11.2 0 6.178-5.026 11.2-11.2 11.2z" fill="currentColor" fill-rule="evenodd"></path></svg>
+                      
+                    
+                    </div><div style="justify-content: flex-end;flex-flow: column; margin-top:80px;color: #ffffff;">
+                    <h2 style="font-size: 12px;
+                    margin-top: 4px; font-weight:700;">PLAYLIST</h2>
+                    <h1 class="PQRS">My Playlist #5</h1>
+                  </div>
+                </div>
+                <hr style="background-color: #282828;border: none;height: 1px; margin: 15px 20px; margin-top:50px;">
+                <h1 style="margin: 15px 20px;color:#ffffff;margin-top:25px;">Let's find something for your playlist</h1>
+                
+        <div class="searchs">
+          <i class="bi bi-search" style="margin-left:-20px;"></i>
+          <input type="text" style="width: 200px;" placeholder="Search for songs or episodes">
+
+      </div>
+            </div>
+        </section>
+    
+    </nav>
+    </div>
+    <div class="master_play">
+      <div class="wave">
+        <div class="wave1"></div>
+        <div class="wave1"></div>
+        <div class="wave1"></div>
+    </div>
+    <img src="img/1.jpg"  id="poster_master_play">
+    <h5 id="title">Excuses<br>
+        <div class="subtitle">Ap Dhillon</div>
+    </h5>
+    <div class="icon">
+        <i class="bi bi-skip-start-fill" id="back"></i>
+        <i class="bi bi-play-fill" id="masterPlay"></i>
+        <i class="bi bi-skip-end-fill" id="next"></i>
+    </div>
+    <span id="currentStart">0:00</span>
+        <div class="bar">
+            <input type="range" id="seek" min="0" value="0" max="100">
+            <div class="bar2" id="bar2"></div>
+            <div class="dot"></div>
+        </div>
+        <span id="currentEnd">0:00</span>
+
+    <div class="vol">
+      <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+      <input type="range" id="vol" min="0" value="10" max="100">
+      <div class="vol_bar"></div>
+      <div class="dot" id="vol_dot"></div>
+  </div>
+          </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
