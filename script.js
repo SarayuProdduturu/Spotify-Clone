@@ -1,4 +1,3 @@
-console.log("hello");
 const music = new Audio("audio/1.mp3");
 let songitem = Array.from(document.getElementsByClassName("music_list"));
 
@@ -133,22 +132,8 @@ const songs = [
 
     }
 ]
-//Music Box
 
-let music_list = Array.from(document.getElementsByClassName("music_list"));
-
-music_list.forEach((element, i) => {
-    element.getElementsByTagName('h4')[0].innerHTML = songs[i].songName;
-    element.getElementsByTagName('h6')[0].innerHTML = songs[i].artistName;
-})
-/*
-Array.from(document.getElementsByClassName('music_list')).forEach((element, i)=>{
-    element.getElementsByTagName('img')[0].src = songs[i].poster;
-    element.getElementsByTagName('h4')[0].innerHTML = songs[i].songName;
-    element.getElementsByTagName('h6')[0].innerHTML = songs[i].artistName;
-})*/
-
-//Popular songs
+//Popular songs,Music box
 Array.from(document.getElementsByClassName('songitem')).forEach((element, i)=>{
     element.getElementsByTagName('img')[0].src = songs[i].poster;
     element.getElementsByTagName('h5')[0].innerHTML = songs[i].songName;
